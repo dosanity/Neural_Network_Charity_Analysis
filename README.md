@@ -44,7 +44,7 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 
-The target performance for accuracy rate is greater than 75%. The model only achieved an accuracy rate of 72.7%.
+The target performance for accuracy rate is greater than 75%. The model only achieved an accuracy rate of 72.71%.
 
 > Python Code:
 
@@ -62,6 +62,13 @@ Loss: 0.5956281423568726, Accuracy: 0.7271137237548828
 ```
 
 ### Optimizing Model Performance
+
+#### Optimization Attempt #1
+
+ + Removed `SPECIAL_CONSIDERATIONS` column
+ + Total parameter decreased from 5981 to 5821
+ + Accuracy increased by 0.11% from 72.71% to 72.82%
+ + Loss decreased by 3.71% from 59.56% to 55.85%
 
 
 
