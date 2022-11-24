@@ -69,7 +69,30 @@ Loss: 0.5956281423568726, Accuracy: 0.7271137237548828
  + Total parameter decreased from 5981 to 5821
  + Accuracy increased by 0.11% from 72.71% to 72.82%
  + Loss decreased by 3.71% from 59.56% to 55.85%
+ 
+> Output
 
+```
+268/268 - 0s - loss: 0.5585 - accuracy: 0.7282 - 399ms/epoch - 1ms/step
+Loss: 0.5584503412246704, Accuracy: 0.7281632423400879
+```
 
+#### Optimization Attempt #2
 
+ + Removed `SPECIAL_CONSIDERATIONS` column
+ + First Hidden Layer: Increased to 200
+ + Second Hidden Layer: Increased to 100
+ + Total parameter increased from 5981 to 28601
+ + Accuracy increased by 0.11% from 72.71% to 72.82%
+ + Loss decreased by 2.71% from 59.56% to 56.85%
+ 
+ > Output
 
+```
+268/268 - 0s - loss: 0.5685 - accuracy: 0.7282 - 449ms/epoch - 2ms/step
+Loss: 0.5685223340988159, Accuracy: 0.7281632423400879
+```
+
+## Summary
+
+The two optimization attempts did not achieve the desired accuracy rate of 75%. By removing a variable an increasing the number of neurons, the accuracy scores only increased by a fraction of a percentage point. The highest accuracy score that was obtained was 72.8%. There is a possibility that different machine learning models such as the Random Forest Classifier or the Deep Learning Neural Network could solve this classification problem since these models are less influenced by outliers.
